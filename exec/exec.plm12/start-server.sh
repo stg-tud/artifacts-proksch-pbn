@@ -10,6 +10,6 @@ JAR=exec.plm12-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 SELECTOR=querytype
 SERVERIP=localhost
-DATASET=0004 
+DATASET=5700 
 java -Xmx4g -jar $JAR $SELECTOR $SERVERIP $DATASET
 

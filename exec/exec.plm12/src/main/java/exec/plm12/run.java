@@ -23,8 +23,8 @@ import com.google.inject.Injector;
 //-Djava.rmi.server.hostname=<hostname> -Djava.net.preferIPv4Stack=true
 public class run {
 
-	private static final String PROPERTY_NAME = "evaluationFolder";
-	private static final String PROPERTY_FILE = "evaluation.properties";
+	public static final String PROPERTY_NAME = "evaluationFolder";
+	public static final String PROPERTY_FILE = "evaluation.properties";
 
 	public static void main(String[] args) throws Exception {
 		initLogger();
@@ -59,7 +59,7 @@ public class run {
 		}
 	}
 
-	private static void initLogger() {
+	public static void initLogger() {
 		Logger.setPrinting(true);
 		Logger.setDebugging(false);
 		Logger.setCapturing(false);
@@ -86,7 +86,7 @@ public class run {
 		}
 	}
 
-	private static String readPropertyFromFile(String propertyName) {
+	public static String readPropertyFromFile(String propertyName) {
 		try {
 			Properties properties = new Properties();
 			properties.load(new FileReader(PROPERTY_FILE));
